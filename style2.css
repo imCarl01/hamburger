@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Tacos";
+    src: url("fonts/This\ Cafe.ttf");
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(204, 2, 2);
+}
+.stickyClass{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.back-container a{
+    list-style-type: none;
+    
+}
+nav{
+    color: white;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Tacos";
+    
+}
+nav h1{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.orders{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+nav img{
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* position: relative; */
+}
+nav span{
+    margin-right: 10px;
+    color: yellow;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu h3{
+    text-align: center;
+    font-size: 30px;
+}
+/* .burger img:hover{
+    transform: scaleX(10px); */
+.menu button{
+    width: 30%;
+    height: 30px;
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: tomato;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 74, 65);
+}
+.menu button:hover{
+    background-color: rgb(155, 73, 59);
+}
+.customise-order{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.customise-order img{
+    margin-top: 20px;
+    width: 700px;
+    float: left;
+}
+.customise-order h2{
+    color: white;
+    font-size: 40px;
+}
+@media(max-width: 480px){
+    .menu img{
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
